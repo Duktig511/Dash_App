@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+     <div class="ui-widget">
+    <select >
+    <option value="Precipitation">Precipitation</option>
+    <option value="Stations">Stations</option>
+    <option value="Temperature Observations">tobs</option>
+    <option value="groups">groups</option>
+    </select>
+    <input id="user_api" type="submit" value="Search">
+    </div>
+    <section>
+        <h3><strong>About Me</strong></h3>
+        <p>
+            <strong>Raphael J Vasquez</strong>
+            <strong>June 14, 1981 </strong>
+            <strong>Austin, Texas</strong>
+        </p>
+    </section>
+{% endblock content %}
