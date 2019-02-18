@@ -1,24 +1,14 @@
 {% extends "layout.html" %}
 {% block content %}
-  <form action="{{url_for('form')}}" name="page_jump" method="POST">
-    <select >
-    <option value="Precipitation">Precipitation</option>
-    <option value="Stations">Stations</option>
-    <option value="Temperature Observations">tobs</option>
-    <option value="groups">groups</option>
-    </select>
-    <input id="page_select" type="submit" value="Search">
-    </form>
-
-<br>
 
 <article class="media content-section">
   <div class="media-body">
       <div class="article-metadata">
           <a class="mr-2" href="https://www.linkedin.com/in/raphael-vasquez-9b20b3b5">just text</a>
-          <small class="text-muted">American Statistical Association, past Chair of the Joint MAA-ASA Committee</small>
+            <small class="text-muted">American Statistical Association, past Chair of the Joint MAA-ASA Committee</small>
       </div>
       <h2><a class="article-title">AuthorBio</a></h2>
+      <strong><h3><a class="article-title">AuthorBio</a></h3></strong>
       <img src="../static/images/005.jpg" alt="No Luck" height="500" width="500" border="0" />
       <p class="article-content">She is a member of the Committee on the Undergraduate Program in Mathematics of the Mathematics Association of America,
           and chairs the MAA subcommittee writing the guidelines for the future of Intro Stats courses.
@@ -29,63 +19,62 @@
           She feels very lucky to be writing this book with her family! </p>
   </div>
 </article>
-<table border="4" cellspacing="2" cellpadding="2" width="900>
 
-<tr>
-        <td class="AuthorPic"> <img src="../static/images/007.jpg" alt="No Luck" height="450" width="450" border="0" /> </td>
-<td class="AuthorBio" width="450"> <b>Robin H. Lock</b> is Burry Professor of Statistics in the Department of Mathematics,
-  Computer Science, and Statistics at St. Lawrence University.
-  He is a Fellow of the American Statistical Association, past Chair of the Joint MAA-ASA Committee on Teaching Statistics,
-  a member of the committee that developed GAISE (Guidelines for Assessment and Instruction in Statistics Education),
-  and a member of the Consortium for the Advancement of Undergraduate Statistics Education, CAUSE.
-  His work was recognized with the ASA's inaugural Waller Distinguished Teaching Career Awared in 2014 and he has won numerous other awards for presentations
-  on statistics education at national conferences.  He brings to the project an insider's understanding of national trends
-  in statistics education.</td>
-</tr>
+    <table border="4" cellspacing="2" cellpadding="2" width="900">
 
-<tr>
-  <td class="AuthorPic"> <img src="../static/images/010.jpg" alt="No Luck" height="450" width="450" border="0"/> </td>
-  <td class="AuthorBio" width="450"> <b>Patti Frazer Lock</b> is Cummings Professor of Mathematics at St. Lawrence University.
-      She is a member of the Committee on the Undergraduate Program in Mathematics of the Mathematics Association of America,
-      and chairs the MAA subcommittee writing the guidelines for the future of Intro Stats courses.
-      She won the J. Calvin Keene faculty award at St. Lawrence University.
-      She is a member of the Calculus Consortium and is a co-author on Hughes-Hallett's Calculus and Applied Calculus,
-      Connally's Functions Modeling Change, and McCallum's Algebra and Multivariable Calculus texts.
-      She is passionate about helping students succeed in, and enjoy, introductory courses in statistics and mathematics.
-      She feels very lucky to be writing this book with her family!   </td>
-</tr>
-<tr>
-  <td class="AuthorPic"> <img src="../static/images/008.jpg" alt="No Luck" height="450" width="450" border="0"/></td>
-  <td class="AuthorBio" width="450"> <b>Kari Lock Morgan</b> is now an assistant professor in the Statistics Department at Penn State University
-      after finishing
-      her Ph. D. in Statistics at Harvard University and spending three years teaching at Duke University.
-      She has taught a variety of statistics classes,
-      including a special course for graduate students on "The Art and Practice of Teaching Statistics",
-      and helped co-develop a new 100-level course at Harvard designed to make statistics enjoyable and
-      applicable to real life. She won the Derek C. Bok Award for Excellence in the Teaching of Undergraduates.
-      She has a particular interest in causal inference, statistics education, and applications of statistics in psychology,
-      education, and health.  </td>
-</tr>
-<tr>
-  <td class="AuthorPic"> <img src="../static/images/009.JPG" alt="No Luck" height="450" width="450" border="0"/> </td>
-  <td class="AuthorBio" width="450"> <b>Eric F. Lock</b> is an assistant professor of Biostatistics at the University of Minnesota School of Public Health.
-      He received his Ph.D in Statistics from the University of North Carolina in 2012, and spent two years
-      doing a post doc in statistical genetics at Duke University.
-      He has been an instructor and instructional assistant for multiple introductory statistics courses,
-      ranging from very traditional to more progressive. He has a particular interest in machine learning
-      and the analysis of high-dimensional data, and has conducted research on applications of statistics in genetics and medicine. </td>
-</tr>
-<tr>
-  <td class="AuthorPic"> <img src="../static/images/011.jpg" alt="No Luck" height="450" width="450" border="2"/></td>
-  <td class="AuthorBio" height="450" width="450" border="1"> <b>Dennis F. Lock</b> recently followed his interests in sports statistics to become the Director of Analytics for the Miami Dolphins (football team).
-      He  finished his Ph.D. focusing on sports statistics with the
-      Department of Statistics at Iowa State University where he served as a statistical consultant for several years
-      and received the Dan Mowrey Consulting Excellence Award. In 2014 he helped design and implement a randomized study
-      at Iowa State to compare the efffectiveness of randomization and traditional approaches to teaching introductory statistics.
-  </td>
-</tr>
+        <tr>
+            <td class="AuthorPic">  <img src="../static/images/010.jpg" alt="No Luck" height="450" width="450" border="0" ></td>
+            <td class="AuthorBio" width="450"> <b>Robin H. Lock</b> is Burry Professor of Statistics in the Department of Mathematics,
+              Computer Science, and Statistics at St. Lawrence University.
+              He is a Fellow of the American Statistical Association, past Chair of the Joint MAA-ASA Committee on Teaching Statistics,
+              a member of the committee that developed GAISE (Guidelines for Assessment and Instruction in Statistics Education),
+              and a member of the Consortium for the Advancement of Undergraduate Statistics Education, CAUSE.
+              His work was recognized with the ASA's inaugural Waller Distinguished Teaching Career Awared in 2014 and he has won numerous other awards for presentations
+              on statistics education at national conferences.  He brings to the project an insider's understanding of national trends
+              in statistics education.</td>
+            </tr>
 
-
+            <tr>
+              <td class="AuthorPic"> <img src="../static/images/010.jpg" alt="No Luck" height="450" width="450" border="0"/> </td>
+              <td class="AuthorBio" width="450"> <b>Patti Frazer Lock</b> is Cummings Professor of Mathematics at St. Lawrence University.
+                  She is a member of the Committee on the Undergraduate Program in Mathematics of the Mathematics Association of America,
+                  and chairs the MAA subcommittee writing the guidelines for the future of Intro Stats courses.
+                  She won the J. Calvin Keene faculty award at St. Lawrence University.
+                  She is a member of the Calculus Consortium and is a co-author on Hughes-Hallett's Calculus and Applied Calculus,
+                  Connally's Functions Modeling Change, and McCallum's Algebra and Multivariable Calculus texts.
+                  She is passionate about helping students succeed in, and enjoy, introductory courses in statistics and mathematics.
+                  She feels very lucky to be writing this book with her family!   </td>
+            </tr>
+            <tr>
+              <td class="AuthorPic"> <img src="../static/images/008.jpg" alt="No Luck" height="450" width="450" border="0"/></td>
+              <td class="AuthorBio" width="450"> <b>Kari Lock Morgan</b> is now an assistant professor in the Statistics Department at Penn State University
+                  after finishing
+                  her Ph. D. in Statistics at Harvard University and spending three years teaching at Duke University.
+                  She has taught a variety of statistics classes,
+                  including a special course for graduate students on "The Art and Practice of Teaching Statistics",
+                  and helped co-develop a new 100-level course at Harvard designed to make statistics enjoyable and
+                  applicable to real life. She won the Derek C. Bok Award for Excellence in the Teaching of Undergraduates.
+                  She has a particular interest in causal inference, statistics education, and applications of statistics in psychology,
+                  education, and health.  </td>
+            </tr>
+            <tr>
+              <td class="AuthorPic"> <img src="../static/images/008.jpg" alt="No Luck" height="450" width="450" border="0"/> </td>
+              <td class="AuthorBio" width="450"> <b>Eric F. Lock</b> is an assistant professor of Biostatistics at the University of Minnesota School of Public Health.
+                  He received his Ph.D in Statistics from the University of North Carolina in 2012, and spent two years
+                  doing a post doc in statistical genetics at Duke University.
+                  He has been an instructor and instructional assistant for multiple introductory statistics courses,
+                  ranging from very traditional to more progressive. He has a particular interest in machine learning
+                  and the analysis of high-dimensional data, and has conducted research on applications of statistics in genetics and medicine. </td>
+            </tr>
+        <tr>
+          <td class="AuthorPic"> <img src="../static/images/005.jpg" alt="No Luck" height="450" width="450" border="2"/></td>
+          <td class="AuthorBio" height="450" width="450" > <b>Dennis F. Lock</b> recently followed his interests in sports statistics to become the Director of Analytics for the Miami Dolphins (football team).
+              He  finished his Ph.D. focusing on sports statistics with the
+              Department of Statistics at Iowa State University where he served as a statistical consultant for several years
+              and received the Dan Mowrey Consulting Excellence Award. In 2014 he helped design and implement a randomized study
+              at Iowa State to compare the efffectiveness of randomization and traditional approaches to teaching introductory statistics.
+          </td>
+        </tr>
 </table>
 
 
