@@ -18,44 +18,41 @@
         <title>Dashboard</title>
     {% endif%}
 </head>
-
+<style> </style>
 <body>
  <div class="container">
      <header class="site-header">
            <nav class="navbar-expand-md navbar-dark bg-dark fixed-top">
             <div class="container">
-              <a class="navbar-brand mr-4" href="/">Dashboard App</a>
+              <a id="HBG" class="navbar-brand mr-4" href="/">Dashboard App</a>
                <button class="navbar-toggler btn-info btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarToggle">
                 <div class="navbar-nav mr-auto">
-                    <a class="nav-item nav-link" href={{ url_for('landing')}}>Home</a>
-                    <a class="nav-item nav-link" href={{ url_for('visual_1')}}>Visual One</a>
-                    <a class="nav-item nav-link" href={{ url_for('visual_2')}}>Visual Two</a>
-                    <a class="nav-item nav-link" href={{ url_for('visual_3')}}>Visual Three</a>
-                    <a class="nav-item nav-link" href={{ url_for('visual_4')}}>Visual Four</a>
-                    <a class="nav-item nav-link" href={{ url_for('comparisons')}}>Comparisons</a>
-                    <a class="nav-pills HBG" href={{ url_for('comparisons')}}>Comparisons</a>
-                    <a class="nav-item nav-link" href={{ url_for('data')}}>Reference</a>
+                    <a id="HBG" class="nav-item nav-link HBG" href={{ url_for('landing')}}>Home</a>
+                    <a id="HBG" class="nav-item nav-link HBG" href={{ url_for('visual_1')}}>Visual One</a>
+                    <a id="HBG" class="nav-item nav-link HBG" href={{ url_for('visual_2')}}>Visual Two</a>
+                    <a id="HBG" class="nav-item nav-link HBG" href={{ url_for('visual_3')}}>Visual Three</a>
+                    <a id="HBG" class="nav-item nav-link HBG" href={{ url_for('visual_4')}}>Visual Four</a>
+                    <a id="HBG" class="nav-item nav-link HBG" href={{ url_for('comparisons')}}>Comparisons</a>
+                    <a id="HBG" class="nav-item nav-link" href={{ url_for('data')}} >Reference</a>
                 </div>
             <!-- Navbar Right Side -->
-            <div class="navbar-menu">
-                <label for="page_selection" name="page_jump">page_selection:</label>
-                <form class= navbar-form action="{{url_for('form')}}" name="page_jump" method="POST">
-                    <select class="ui-selectmenu-menu" id="page_selection" name="selection" >
-                        <option value="visual_1">visual_1</option>
-                        <option value="visual_2">visual_2</option>
-                        <option value="visual_3">visual_3</option>
-                        <option value="visual_4">visual_4</option>
-                        <option value="comparisons">comparisons</option>
-                        <option value="data">data</option>
-                    </select>
-                <label for="page_selection">page_selection:</label>
-                <input  class= input-group-btn type="submit" value="jump">
-                </form>
-             </div>
-           </div>
+                <div class="dropdown">
+                  <a class="btn dropdown-toggle " href="#" role="button" id="dropdownMainMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMainMenu">
+                    <a id="HBGs" class="dropdown-item" href={{ url_for('visual_1')}}>Visual One</a>
+                    <a id="HBGs" class="dropdown-item" href={{ url_for('visual_2')}}>Visual Two</a>
+                    <a id="HBGs" class="dropdown-item" href={{ url_for('visual_3')}}>Visual Three</a>
+                    <a id="HBGs" class="dropdown-item" href={{ url_for('visual_4')}}>Visual Four</a>
+                    <a id="HBGs" class="dropdown-item" href={{ url_for('comparisons')}}>Comparisons</a>
+                    <a id="HBGs" class="dropdown-item" href={{ url_for('data')}}>Reference</a>
+                  </div>
+                </div>
+              </div>
          </div>
        </nav>
      </header>
