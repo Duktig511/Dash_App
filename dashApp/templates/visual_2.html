@@ -1,19 +1,49 @@
 {% extends "layout.html" %}
 {% block content %}
-    <article class="media content-section">
-    <div class="media-body">
-        <div class="article-metadata">
-            <a class="mr-2" href="https://www.linkedin.com/in/raphael-vasquez-9b20b3b5">just text</a>
-             <small class="text-muted">American Statistical Association, past Chair of the Joint MAA-ASA Committee</small>
+     <div class="container">
+        <div class="container">
+          <div class="slick-row">
+           <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="https://www.linkedin.com/in/raphael-vasquez-9b20b3b5">just text</a>
+                 <small class="text-muted">American Statistical Association, past Chair of the Joint MAA-ASA Committee</small>
+            </div>
         </div>
-        <h2><a class="article-title">AuthorBio</a></h2>
+        <h3><strong>About Me</strong></h3>
+            <p>
+                <strong>Raphael J Vasquez</strong>
+                <strong>June 14, 1981 </strong>
+                <strong>Austin, Texas</strong>
+            </p>
+        </div>
+        </div>
     </div>
-    <h3><strong>About Me</strong></h3>
-        <p>
-            <strong>Raphael J Vasquez</strong>
-            <strong>June 14, 1981 </strong>
-            <strong>Austin, Texas</strong>
-        </p>
-    </article>
-
+ <div class="shadow-lg p-3 mb-5 bg-white rounded">
+ <div class="container">
+    <div class="alert alert-primary" role="alert">
+      {% filter upper %}A simple primary alert—check it out!{% endfilter %}
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      A simple secondary alert—check it out!
+    </div>
+    <div class="alert alert-success" role="alert">
+      A simple success alert—check it out!
+    </div>
+    <div class="alert alert-danger" role="alert">
+      A simple danger alert—check it out!
+    </div>
+    <div class="alert alert-warning" role="alert">
+      {% filter upper %}A simple primary alert—check it out!{% endfilter %}
+    </div>
+    <div class="alert alert-info" role="alert">
+      A simple info alert—check it out!
+    </div>
+    <div class="alert alert-light" role="alert">{% filter upper %}A simple primary alert—check it out!{% endfilter %}
+    </div>
+    <div class="alert alert-dark" role="alert">
+      A simple dark alert—check it out!
+    </div>
+     </div>
+</div>
 {% endblock content %}
+

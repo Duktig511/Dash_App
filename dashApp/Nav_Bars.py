@@ -1,9 +1,8 @@
-from flask_nav.elements import Navbar, View, Link, Text, Separator,
+from flask_nav.elements import Navbar, View, Link, Text, Separator
 from flask_nav.renderers import Renderer
-from  dashApp.app import nav, Bootstrap
 from dominate import tags
 
-@nav.renderer()
+
 class JustDivRenderer(Renderer):
 
     def visit_Navbar(self, node):
@@ -27,11 +26,8 @@ class JustDivRenderer(Renderer):
                         *[self.visit(item) for item in node.items])
 
 
-@nav.navigation
+nav_bar = (View('Home', 'landing'), View('Visual One', 'visual_1'),
+                View('Visual Two', 'visual_2'), View('Visual Three', 'visual_3'),
+                View('Visual Four', 'visual_4'), View('Visual Five', 'visual_5'),
+                Link('Google', 'www.google.com'),  Separator(), Text('HR'))
 
-
-
-nav_bar = top_nav((View('Landing Page', 'index'), View('Visual One', 'visual_1'),
-                View('Visual One', 'visual_1'), View('Visual Two', 'visual_2'),
-                View('Visual Three', 'visual_3'), View('Visual Four', 'visual_4'),
-                Link('Google', 'www.google.com'),  Separator(), Text('HR')))
