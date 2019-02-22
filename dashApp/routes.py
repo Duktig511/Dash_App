@@ -1,6 +1,15 @@
 from dashApp.app import app
 from flask import url_for, redirect, flash
 from flask import render_template, request
+import pandas as pd
+import  os
+
+
+input = os.path.join(os.path.dirname(__file__),'customers_orders_opt.csv')
+
+df = pd.read_csv(input)
+
+customer_html = df.head()
 
 
 ################################################
@@ -53,5 +62,5 @@ def comparisons():
 @app.route("/data",  methods=['GET', 'POST'])
 def data():
 
-    return render_template("data.html", title="Reference")
+    return render_template("data.html", title="Reference", data=customer_html)
 
